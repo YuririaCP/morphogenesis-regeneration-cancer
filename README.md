@@ -39,4 +39,7 @@ Every `sim_*.py` script accepts `QUICK=1` for a short run (its output goes to a 
 
 ## License and citation
 
-License: to be chosen by the author before public release. Citation: see the manuscript; a versioned release will be archived at Zenodo (DOI to be added).
+- **Code** (`scripts/*.py`): MIT License, see `LICENSE`.
+- **Figures** (`figs/`) and **result files** (`scripts/*.json`, `scripts/*.jsonl`, `scripts/*.txt`): [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); please cite the manuscript.
+
+Citation: see the manuscript; a versioned release will be archived at Zenodo (DOI to be added).
