@@ -12,8 +12,8 @@ Three ablation shapes applied to the morphostatic 2D attractor:
                 (left: rows 3-7, cols 3-7 | right: rows 12-16, cols 12-16)
 
 Ablation: scramble V to Uniform(-0.3,0.3), m to Uniform(0,0.5).
-Recovery: alpha=1.2 (morphostatic regime, guarantees single morphostatic
-          attractor per Theorem 1 + Corollary 1).
+Recovery: alpha=1.2 (above alpha_c*, so the decoupled alternative state is
+          absent, Theorem 1(iii); uniqueness is not proved for alpha <= 4 alpha_c*).
 
 Four snapshots per geometry:
   (i)  t=200  pre-lesion (converged attractor)

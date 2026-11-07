@@ -3,7 +3,8 @@ fig_blockade.py
 ===============
 Supplementary figure for Prediction 3: outcome of a transient transmission blockade of a 3-cell block as a
 function of the blockade duration D (results of sim_blockade.py).
-  (A) fraction of patterns in which the inverted block returns to the original sign, for the two orientations.
+  (A) fraction of patterns in which the inverted block returns to the original sign, for the two orientations
+      (depolarized block: the patterns that recover without blockade, D = 0).
   (B) mean target phi(m) over the block at release, versus D (mean and range over patterns), with the
       effective relaxation times T_G and T_m marked.
 """
@@ -20,6 +21,9 @@ mpl.rcParams.update({'font.size': 6.5, 'axes.titlesize': 7, 'axes.labelsize': 6.
                      'ytick.labelsize': 6, 'legend.fontsize': 6})
 R = [json.loads(l) for l in open(os.path.join(HERE, 'blockade_results.jsonl'))]
 R = [r for r in R if not r.get('skipped')]
+# duration analysis: depolarized-block patterns that already recover without blockade (D = 0)
+BASE = {r['seed'] for r in R if r['orient'] == 'V+ to V-' and r['D'] == 0 and r['outcome'] == 'recovered'}
+R = [r for r in R if r['orient'] != 'V+ to V-' or r['seed'] in BASE]
 Ds = sorted({r['D'] for r in R})
 T_G, T_m = 50.0, 100.0
 cols = {'V+ to V-': '#1f5fa8', 'V- to V+': '#c0392b'}

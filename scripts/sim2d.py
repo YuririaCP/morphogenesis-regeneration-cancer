@@ -1,12 +1,12 @@
 """
 2D Bioelectric Field Model – Simulation
-Cortés-Poza, "Morphogenesis, Regeneration, and Cancer as Dynamical
-Regimes of a Minimal Bioelectric Field Model"
+Cortés-Poza, "Morphogenesis, Regeneration, and Cancer-Like Autonomy in a
+Common Bioelectric Dynamical System"
 
 Three protocols on a 20×20 grid:
-  (A) Morphogenesis  – random IC, G_ij=0 → patterned attractor
+  (A) Target convergence – random IC, G_ij=0 → prescribed pattern
   (B) Pattern recovery – morphostatic state → left half scrambled → pattern restored
-  (C) Cancer         – morphostatic state → local G loss → fragmentation
+  (C) Cancer-like autonomy – morphostatic state → local G loss → local alternative state
 
 ODE system (per cell i, neighbours j ∈ N(i)):
   C  V̇_i  = −f(V_i) + α(φ(m_i)−V_i) + Σ_j G_ij(V_j−V_i)

@@ -2,8 +2,8 @@
 prove_threshold.py
 Yuriria Cortés-Poza
 ===================
-Numerical verification of Lemma 1 (Monostability) and Corollary 1
-(Explicit phase boundary) from the PNAS paper.
+Numerical verification of Lemma 1 (monostability threshold of a committed cell)
+of the manuscript.
 
 We verify:
   1. The analytic formula  alpha_c* = a*L^2 / (4*C) = 0.5625

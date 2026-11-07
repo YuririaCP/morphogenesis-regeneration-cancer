@@ -12,7 +12,7 @@ For each parameter point (G_bar, alpha) in a 6x6 grid:
     have the same sign (i.e. correct half-plane).
 
 This is the 2D analogue of the 1D phase diagram in prove_threshold.py,
-validating Corollary 1 (G_bar + alpha > alpha_c* => monostability) in 2D.
+checking the reference line G_bar + alpha = alpha_c* (Lemma 1, one-neighbor reference) in 2D.
 
 The single-cell reference threshold  G_bar + alpha = alpha_c* = 0.5625
 is overlaid as a dashed line.
