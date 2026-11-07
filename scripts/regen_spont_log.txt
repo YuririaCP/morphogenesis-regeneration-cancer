@@ -1,0 +1,29 @@
+seed 7 domains (start, end, pol): [(0, 2, 1), (3, 14, 0), (15, 19, 1), (20, 40, 0), (41, 45, 1), (46, 56, 0), (57, 59, 1)]
+[11s] A: 12 runs
+  A 1 3 K 1 cells 1 2 occ 1.00 correct 1.00 t_rec 0 same 1.00
+  A 0 12 K 1 cells 9 10 occ 0.00 correct 0.00 t_rec None same 1.00
+  A 0 12 K 3 cells 8 11 occ 0.00 correct 0.00 t_rec None same 1.00
+  A 1 5 K 1 cells 17 18 occ 1.00 correct 1.00 t_rec 0 same 1.00
+  A 1 5 K 3 cells 16 19 occ 1.00 correct 1.00 t_rec 1 same 1.00
+  A 0 21 K 1 cells 30 31 occ 0.00 correct 0.00 t_rec None same 1.00
+  A 0 21 K 3 cells 29 32 occ 0.00 correct 0.00 t_rec None same 1.00
+  A 1 5 K 1 cells 43 44 occ 1.00 correct 1.00 t_rec 0 same 1.00
+  A 1 5 K 3 cells 42 45 occ 1.00 correct 1.00 t_rec 1 same 1.00
+  A 0 11 K 1 cells 51 52 occ 0.00 correct 0.00 t_rec None same 1.00
+  A 0 11 K 3 cells 50 53 occ 0.00 correct 0.00 t_rec None same 1.00
+  A 1 3 K 1 cells 58 59 occ 1.00 correct 1.00 t_rec 0 same 1.00
+  B nominal occ 1.00 correct 1.00 m_mean 0.980 t_rec 1
+  B kappa0 occ 1.00 correct 1.00 m_mean 0.980 t_rec 1
+  B alpha0 occ 1.00 correct 1.00 m_mean 0.980 t_rec 1
+  B alpha0_kappa0 occ 1.00 correct 1.00 m_mean 0.980 t_rec 1
+  B frozen_memory occ 1.00 correct 1.00 m_mean 0.949 t_rec 1
+[171s] C: 281 runs
+  C depolarized     K=1: n= 56 full refill  56/ 56  correct 1.00  tissue unchanged 1.000
+  C depolarized     K=3: n= 30 full refill  30/ 30  correct 1.00  tissue unchanged 1.000
+  C depolarized     K=5: n= 17 full refill  17/ 17  correct 1.00  tissue unchanged 1.000
+  C depolarized     K=7: n=  5 full refill   5/  5  correct 1.00  tissue unchanged 1.000
+  C hyperpolarized  K=1: n= 56 full refill   0/ 56  correct 0.00  tissue unchanged 1.000
+  C hyperpolarized  K=3: n= 50 full refill   0/ 50  correct 0.00  tissue unchanged 1.000
+  C hyperpolarized  K=5: n= 36 full refill   0/ 36  correct 0.00  tissue unchanged 1.000
+  C hyperpolarized  K=7: n= 31 full refill   0/ 31  correct 0.00  tissue unchanged 1.000
+saved; total 171s

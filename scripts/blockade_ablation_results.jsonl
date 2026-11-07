@@ -1,0 +1,144 @@
+{"seed": 1, "variant": "nominal", "D": 20.0, "outcome": "recovered"}
+{"seed": 1, "variant": "nominal", "D": 40.0, "outcome": "recovered"}
+{"seed": 1, "variant": "nominal", "D": 50.0, "outcome": "recovered"}
+{"seed": 1, "variant": "nominal", "D": 60.0, "outcome": "persists"}
+{"seed": 1, "variant": "nominal", "D": 80.0, "outcome": "persists"}
+{"seed": 1, "variant": "nominal", "D": 100.0, "outcome": "persists"}
+{"seed": 1, "variant": "nominal", "D": 150.0, "outcome": "persists"}
+{"seed": 1, "variant": "nominal", "D": 200.0, "outcome": "persists"}
+{"seed": 1, "variant": "m frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 1, "variant": "m frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 1, "variant": "m frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 1, "variant": "m frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 1, "variant": "m frozen", "D": 80.0, "outcome": "persists"}
+{"seed": 1, "variant": "m frozen", "D": 100.0, "outcome": "persists"}
+{"seed": 1, "variant": "m frozen", "D": 150.0, "outcome": "persists"}
+{"seed": 1, "variant": "G frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 1, "variant": "m frozen", "D": 200.0, "outcome": "persists"}
+{"seed": 1, "variant": "G frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 1, "variant": "G frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 1, "variant": "G frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 1, "variant": "G frozen", "D": 80.0, "outcome": "recovered"}
+{"seed": 1, "variant": "G frozen", "D": 100.0, "outcome": "recovered"}
+{"seed": 2, "variant": "nominal", "D": 20.0, "outcome": "recovered"}
+{"seed": 1, "variant": "G frozen", "D": 150.0, "outcome": "recovered"}
+{"seed": 2, "variant": "nominal", "D": 40.0, "outcome": "recovered"}
+{"seed": 2, "variant": "nominal", "D": 50.0, "outcome": "recovered"}
+{"seed": 2, "variant": "nominal", "D": 60.0, "outcome": "persists"}
+{"seed": 1, "variant": "G frozen", "D": 200.0, "outcome": "recovered"}
+{"seed": 2, "variant": "nominal", "D": 80.0, "outcome": "persists"}
+{"seed": 2, "variant": "nominal", "D": 100.0, "outcome": "persists"}
+{"seed": 2, "variant": "m frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 2, "variant": "m frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 2, "variant": "nominal", "D": 150.0, "outcome": "persists"}
+{"seed": 2, "variant": "m frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 2, "variant": "m frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 2, "variant": "nominal", "D": 200.0, "outcome": "persists"}
+{"seed": 2, "variant": "m frozen", "D": 80.0, "outcome": "persists"}
+{"seed": 2, "variant": "m frozen", "D": 100.0, "outcome": "persists"}
+{"seed": 2, "variant": "G frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 2, "variant": "G frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 2, "variant": "m frozen", "D": 150.0, "outcome": "persists"}
+{"seed": 2, "variant": "G frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 2, "variant": "G frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 2, "variant": "m frozen", "D": 200.0, "outcome": "persists"}
+{"seed": 2, "variant": "G frozen", "D": 80.0, "outcome": "recovered"}
+{"seed": 2, "variant": "G frozen", "D": 100.0, "outcome": "recovered"}
+{"seed": 4, "variant": "nominal", "D": 20.0, "outcome": "recovered"}
+{"seed": 4, "variant": "nominal", "D": 40.0, "outcome": "recovered"}
+{"seed": 4, "variant": "nominal", "D": 50.0, "outcome": "recovered"}
+{"seed": 2, "variant": "G frozen", "D": 150.0, "outcome": "recovered"}
+{"seed": 2, "variant": "G frozen", "D": 200.0, "outcome": "recovered"}
+{"seed": 4, "variant": "nominal", "D": 60.0, "outcome": "persists"}
+{"seed": 4, "variant": "nominal", "D": 80.0, "outcome": "persists"}
+{"seed": 4, "variant": "nominal", "D": 100.0, "outcome": "persists"}
+{"seed": 4, "variant": "m frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 4, "variant": "m frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 4, "variant": "nominal", "D": 150.0, "outcome": "persists"}
+{"seed": 4, "variant": "m frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 4, "variant": "m frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 4, "variant": "nominal", "D": 200.0, "outcome": "persists"}
+{"seed": 4, "variant": "m frozen", "D": 80.0, "outcome": "persists"}
+{"seed": 4, "variant": "m frozen", "D": 100.0, "outcome": "persists"}
+{"seed": 4, "variant": "G frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 4, "variant": "G frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 4, "variant": "m frozen", "D": 150.0, "outcome": "persists"}
+{"seed": 4, "variant": "G frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 4, "variant": "G frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 4, "variant": "m frozen", "D": 200.0, "outcome": "persists"}
+{"seed": 4, "variant": "G frozen", "D": 80.0, "outcome": "recovered"}
+{"seed": 4, "variant": "G frozen", "D": 100.0, "outcome": "recovered"}
+{"seed": 9, "variant": "nominal", "D": 20.0, "outcome": "recovered"}
+{"seed": 9, "variant": "nominal", "D": 40.0, "outcome": "recovered"}
+{"seed": 4, "variant": "G frozen", "D": 150.0, "outcome": "recovered"}
+{"seed": 9, "variant": "nominal", "D": 50.0, "outcome": "recovered"}
+{"seed": 9, "variant": "nominal", "D": 60.0, "outcome": "persists"}
+{"seed": 9, "variant": "nominal", "D": 80.0, "outcome": "persists"}
+{"seed": 4, "variant": "G frozen", "D": 200.0, "outcome": "recovered"}
+{"seed": 9, "variant": "nominal", "D": 100.0, "outcome": "persists"}
+{"seed": 9, "variant": "m frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 9, "variant": "m frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 9, "variant": "nominal", "D": 150.0, "outcome": "persists"}
+{"seed": 9, "variant": "m frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 9, "variant": "m frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 9, "variant": "nominal", "D": 200.0, "outcome": "persists"}
+{"seed": 9, "variant": "m frozen", "D": 80.0, "outcome": "persists"}
+{"seed": 9, "variant": "m frozen", "D": 100.0, "outcome": "persists"}
+{"seed": 9, "variant": "G frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 9, "variant": "m frozen", "D": 150.0, "outcome": "persists"}
+{"seed": 9, "variant": "G frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 9, "variant": "G frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 9, "variant": "m frozen", "D": 200.0, "outcome": "persists"}
+{"seed": 9, "variant": "G frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 9, "variant": "G frozen", "D": 80.0, "outcome": "recovered"}
+{"seed": 9, "variant": "G frozen", "D": 100.0, "outcome": "recovered"}
+{"seed": 13, "variant": "nominal", "D": 20.0, "outcome": "recovered"}
+{"seed": 9, "variant": "G frozen", "D": 150.0, "outcome": "recovered"}
+{"seed": 13, "variant": "nominal", "D": 40.0, "outcome": "recovered"}
+{"seed": 13, "variant": "nominal", "D": 50.0, "outcome": "persists"}
+{"seed": 13, "variant": "nominal", "D": 60.0, "outcome": "persists"}
+{"seed": 13, "variant": "nominal", "D": 80.0, "outcome": "persists"}
+{"seed": 9, "variant": "G frozen", "D": 200.0, "outcome": "recovered"}
+{"seed": 13, "variant": "nominal", "D": 100.0, "outcome": "persists"}
+{"seed": 13, "variant": "m frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 13, "variant": "m frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 13, "variant": "nominal", "D": 150.0, "outcome": "persists"}
+{"seed": 13, "variant": "m frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 13, "variant": "m frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 13, "variant": "m frozen", "D": 80.0, "outcome": "persists"}
+{"seed": 13, "variant": "nominal", "D": 200.0, "outcome": "persists"}
+{"seed": 13, "variant": "m frozen", "D": 100.0, "outcome": "persists"}
+{"seed": 13, "variant": "G frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 13, "variant": "G frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 13, "variant": "m frozen", "D": 150.0, "outcome": "persists"}
+{"seed": 13, "variant": "G frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 13, "variant": "G frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 13, "variant": "m frozen", "D": 200.0, "outcome": "persists"}
+{"seed": 13, "variant": "G frozen", "D": 80.0, "outcome": "recovered"}
+{"seed": 15, "variant": "nominal", "D": 20.0, "outcome": "recovered"}
+{"seed": 13, "variant": "G frozen", "D": 100.0, "outcome": "mixed"}
+{"seed": 15, "variant": "nominal", "D": 40.0, "outcome": "recovered"}
+{"seed": 13, "variant": "G frozen", "D": 150.0, "outcome": "mixed"}
+{"seed": 15, "variant": "nominal", "D": 50.0, "outcome": "recovered"}
+{"seed": 15, "variant": "nominal", "D": 60.0, "outcome": "persists"}
+{"seed": 15, "variant": "nominal", "D": 80.0, "outcome": "persists"}
+{"seed": 13, "variant": "G frozen", "D": 200.0, "outcome": "mixed"}
+{"seed": 15, "variant": "nominal", "D": 100.0, "outcome": "persists"}
+{"seed": 15, "variant": "m frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 15, "variant": "nominal", "D": 150.0, "outcome": "persists"}
+{"seed": 15, "variant": "m frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 15, "variant": "m frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 15, "variant": "m frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 15, "variant": "nominal", "D": 200.0, "outcome": "persists"}
+{"seed": 15, "variant": "m frozen", "D": 80.0, "outcome": "persists"}
+{"seed": 15, "variant": "G frozen", "D": 20.0, "outcome": "recovered"}
+{"seed": 15, "variant": "m frozen", "D": 100.0, "outcome": "persists"}
+{"seed": 15, "variant": "G frozen", "D": 40.0, "outcome": "recovered"}
+{"seed": 15, "variant": "m frozen", "D": 150.0, "outcome": "persists"}
+{"seed": 15, "variant": "G frozen", "D": 50.0, "outcome": "recovered"}
+{"seed": 15, "variant": "G frozen", "D": 60.0, "outcome": "recovered"}
+{"seed": 15, "variant": "G frozen", "D": 80.0, "outcome": "recovered"}
+{"seed": 15, "variant": "m frozen", "D": 200.0, "outcome": "persists"}
+{"seed": 15, "variant": "G frozen", "D": 100.0, "outcome": "recovered"}
+{"seed": 15, "variant": "G frozen", "D": 150.0, "outcome": "recovered"}
+{"seed": 15, "variant": "G frozen", "D": 200.0, "outcome": "recovered"}
