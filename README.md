@@ -24,9 +24,10 @@ Every `sim_*.py` script accepts `QUICK=1` for a short run (its output goes to a 
 | `sim_regimes.py`, `sim_autonomy.py` | Recovery maps; fixed conductances and adaptive isolation | figures |
 | `sim_noise.py` | Noise experiments, escape times (Fig. S1) | figures, tables |
 | `sim_seeds.py`, `sim_seeds_env.py` | Robustness across 16 seeds and environment control | `seeds_results.jsonl`, `seeds_env_results.json` |
-| `sim_blockade.py`, `sim_blockade_ablation.py`, `fig_blockade.py` | Transient coupling blockade (Prediction 3, Fig. S9) | `blockade_results.jsonl`, `blockade_ablation_results.jsonl` |
+| `sim_blockade.py`, `sim_blockade_ablation.py`, `fig_blockade.py` | Transient coupling blockade (Prediction 3, Fig. S9; duration analysis on the patterns that recover at D = 0) | `blockade_results.jsonl`, `blockade_ablation_results.jsonl` |
 | `sim2d*.py` | Two-dimensional prescribed-target extension | figures |
-| `prove_threshold.py` | Symbolic and numerical check of Lemma 1 | printed |
+| `prove_threshold.py` | Numerical check of Lemma 1; saddle-node continuation and monostability map (Fig. S2) | figures |
+| `sim_errorcorr_1d.py` | One-dimensional error correction after structured inversion (Fig. S3) | `figs/fig_error_correction.pdf` |
 | `make_supp_tables.py` | Tables of the Supplementary Material | LaTeX |
 
 `figs/` holds the final figures used in the manuscript.
