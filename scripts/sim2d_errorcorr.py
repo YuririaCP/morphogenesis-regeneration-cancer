@@ -157,12 +157,12 @@ def show_snap(ax, y_vec, t_label, ylabel=None):
 
 for col, (si, st) in enumerate(zip(SNAP_IDX, SNAP_T)):
     ax = fig.add_subplot(gs[0, col])
-    lbl = rf'(a)  $\alpha={ALPHA_A}$ — corrects' if col == 0 else None
+    lbl = rf'(a)  $\alpha={ALPHA_A}$: corrects' if col == 0 else None
     show_snap(ax, solA.y[:, si], st, lbl)
 
 for col, (si, st) in enumerate(zip(SNAP_IDX, SNAP_T)):
     ax = fig.add_subplot(gs[1, col])
-    lbl = rf'(b)  $\alpha={ALPHA_B}$ — trapped' if col == 0 else None
+    lbl = rf'(b)  $\alpha={ALPHA_B}$: trapped' if col == 0 else None
     show_snap(ax, solB.y[:, si], st, lbl)
 
 # shared colourbar
@@ -174,10 +174,10 @@ cb.ax.tick_params(labelsize=7)
 # E_Omega panel
 ax_E = fig.add_subplot(gs[2, :])
 ax_E.plot(t_post, E_A, color='#1a6faf', lw=2.2,
-          label=(rf'$\alpha={ALPHA_A}$  — correction succeeds '
+          label=(rf'$\alpha={ALPHA_A}$ : correction succeeds '
                  r'($E_\Omega \to 0$)'))
 ax_E.plot(t_post, E_B, color='#cc2222', lw=2.2, ls='--',
-          label=(rf'$\alpha={ALPHA_B}$  — trapped in inverted state '
+          label=(rf'$\alpha={ALPHA_B}$ : trapped in inverted state '
                  r'($E_\Omega$ persists)'))
 ax_E.axhline(0, color='gray', lw=0.7, ls=':')
 ax_E.set_xlabel('Time since perturbation', fontsize=10)
@@ -198,7 +198,7 @@ ax_E.annotate(
               edgecolor='lightgray', alpha=0.90))
 
 fig.suptitle(
-    r'2D active error correction — $\Omega$ = 6$\times$6 patch, '
+    r'2D active error correction: $\Omega$ = 6$\times$6 patch, '
     r'$G_\Omega \!=\! 0$ and $V_\Omega$ inverted at $t=0$',
     fontsize=9.5, y=0.975, style='italic', color='#333333')
 

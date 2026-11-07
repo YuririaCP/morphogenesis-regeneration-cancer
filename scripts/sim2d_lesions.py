@@ -115,9 +115,9 @@ LESIONS = {
                     cells_from_rc(range(13, 17), range(13, 17))]),
 }
 LESION_LABELS = {
-    'A_square': '(A) Square perturbation — 6×6, crosses midline',
-    'B_band'  : '(B) Band perturbation — full-width horizontal band',
-    'C_dual'  : '(C) Dual perturbation — two separate 4×4 patches',
+    'A_square': '(A) Square perturbation: 6×6, crosses midline',
+    'B_band'  : '(B) Band perturbation: full-width horizontal band',
+    'C_dual'  : '(C) Dual perturbation: two separate 4×4 patches',
 }
 
 def apply_ablation(y, lesion_cells, rng):

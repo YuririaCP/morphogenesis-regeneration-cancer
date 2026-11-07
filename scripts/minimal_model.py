@@ -5,7 +5,7 @@ Yuriria Cortés-Poza
 Minimal unified dynamical model for morphogenesis, regeneration, and cancer.
 
 State variables per occupied cell i (ni = 1):
-  V_i  : membrane potential  — bistable cubic dynamics  (fast)
+  V_i  : membrane potential : bistable cubic dynamics  (fast)
   m_i  : morphological memory variable                  (slow)
 
 Edge variables:
@@ -27,7 +27,7 @@ Memory layer (slow, timescale tau_m >> tau_V):
   (normalised production: [0,1]^N is positively invariant)
 
 Coupling dynamics (intermediate, tau_V < tau_G < tau_m):
-  tau_G dG_ij/dt = sigma(V_i)*sigma(V_j)*(1 + gamma*m_i*m_j) - lam_G*G_ij
+  tau_G dG_ij/dt = sigma_G(V_i)*sigma_G(V_j)*(1 + gamma*m_i*m_j) - lam_G*G_ij
 
 Occupancy rule (discrete, checked every dt_n):
   n_i becomes 1 iff n_i=0 AND #{occupied neighbors} >= q
@@ -82,6 +82,7 @@ class MinimalParams:
     kappa:  float = 0.10   # spatial memory diffusion coefficient
     k_phi:  float = 4.0    # steepness of phi(m): maps m -> voltage target
     k_h:    float = 4.0    # steepness of sigma_h(V): maps V -> memory drive
+    k_G:    float = 5.0    # steepness of sigma_G(V): maps V -> conductance production
 
     # --- Gap-junction coupling ---
     G_init:  float = 0.50   # initial conductance (uniform)
@@ -132,7 +133,7 @@ class MinimalNetwork:
     """
     Minimal bioelectric network: state per cell = (V_i, m_i), plus G_ij, n_i.
 
-    The three regimes — morphogenesis, regeneration, cancer — are obtained
+    The three regimes: morphogenesis, regeneration, cancer: are obtained
     by different initialization protocols; the equations are unchanged.
     """
 
@@ -217,7 +218,7 @@ class MinimalNetwork:
         f_V = f_bist(V, p.a_bist, p.V_minus, p.V_0, p.V_plus)
 
         # Sigmoidal activations
-        sg  = sigma(V, x0=p.V_0, k=5.0)
+        sg  = sigma(V, x0=p.V_0, k=p.k_G)
         sh  = sigma_h(V, p.V_0, p.k_h)
         phi = phi_func(m, p.V_minus, p.V_plus, p.k_phi)
 
@@ -469,7 +470,7 @@ def run_regeneration(p: MinimalParams, T_pre: float = 120.0,
     half = N // 2
 
     # Phase 1: morphogenesis with structured initial condition.
-    # Left half depolarised, right half hyperpolarised — guarantees a wide
+    # Left half depolarised, right half hyperpolarised: guarantees a wide
     # depolarised zone regardless of random seed so the lesion boundary cells
     # are always at V_+ and the occupancy rule fires.
     net = MinimalNetwork(p)
@@ -541,7 +542,7 @@ def run_cancer(p: MinimalParams, T_pre: float = 120.0,
     # Step 1: isolate Omega (reduce coupling on all incident edges)
     net.reduce_coupling(i0, i1, G_cancer=G_cancer)
 
-    # Step 2: invert voltage in Omega — local memory (m_i) stays intact,
+    # Step 2: invert voltage in Omega: local memory (m_i) stays intact,
     # so phi(m_i) still points to the original polarity.  With
     # beta_eff = G_cancer + alpha < alpha_c*, the bistable landscape
     # has a coexisting local attractor near the inverted state; the global
@@ -644,7 +645,7 @@ def fig_regeneration(net: MinimalNetwork, i0: int, i1: int,
     im0 = _space_time_panel(axes[0], net.hist_V, t_arr,
                              net.p.V_minus, net.p.V_plus, _vmap,
                              r'Cell index $i$', xlabel=False)
-    axes[0].set_title(r'$V_i(t)$ — Regeneration after lesion', fontsize=9, pad=4)
+    axes[0].set_title(r'$V_i(t)$: Regeneration after lesion', fontsize=9, pad=4)
     plt.colorbar(im0, ax=axes[0], pad=0.01, fraction=0.03, label=r'$V_i$')
 
     im1 = _space_time_panel(axes[1], net.hist_m, t_arr,
@@ -677,14 +678,14 @@ def fig_cancer(net: MinimalNetwork, i0: int, i1: int,
     im0 = _space_time_panel(axes[0], net.hist_V, t_arr,
                              net.p.V_minus, net.p.V_plus, _vmap,
                              r'Cell index $i$', xlabel=False)
-    axes[0].set_title(r'$V_i(t)$ — Cancer-like autonomy: local attractor in $\Omega$',
+    axes[0].set_title(r'$V_i(t)$: Cancer-like autonomy, local attractor in $\Omega$',
                       fontsize=9, pad=4)
     plt.colorbar(im0, ax=axes[0], pad=0.01, fraction=0.03, label=r'$V_i$')
 
     im1 = _space_time_panel(axes[1], net.hist_G, t_arr,
                              0.0, 1.2, 'YlOrBr',
                              r'Cell index $i$', xlabel=True)
-    axes[1].set_title(r'$\bar{G}_i(t)$ — conductance loss in $\Omega$',
+    axes[1].set_title(r'$\bar{G}_i(t)$: conductance loss in $\Omega$',
                       fontsize=9, pad=4)
     plt.colorbar(im1, ax=axes[1], pad=0.01, fraction=0.03, label=r'$\bar{G}_{ij}$')
     axes[1].set_xlabel('Time', fontsize=9)
